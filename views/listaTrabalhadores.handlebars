@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Lista de trabalhadores</h1>
+    <a href="/trabalhadores/adicionar" class="btn">Adicionar Novo Trabalhador</a>
+    <ul>
+        {{#each trabalhadores}}
+        <li>
+            {{nome}} - {{funcao}}
+            <a href="/trabalhadores/{{id}}/editar">Editar</a>
+            <a href="/trabalhadores/{{id}}/excluir">Excluir</a>
+        </li>
+        {{/each}}
+    </ul>
+</div>

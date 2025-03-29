@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Editar Trabalhador</h1>
+    <form method="POST" action="/trabalhadores/{{trabalhadores.id}}/editar">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" value="{{trabalhadores.nome}}" required>
+        <label for="funcao">Função:</label>
+        <input type="text" id="funcao" name="funcao" value="{{trabalhadores.funcao}}" required>
+        <button type="submit">Salvar</button>
+    </form>
+</div>

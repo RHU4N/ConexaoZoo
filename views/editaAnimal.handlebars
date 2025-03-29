@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Editar Animal</h1>
+    <form method="POST" action="/animais/{{animais.id}}/edita">
+        <label for="especie">Especie:</label>
+        <input type="text" id="especie" name="especie" value="{{animais.especie}}" required>
+        <label for="quantidade">Quantidade:</label>
+        <input type="text" id="quantidade" name="quantidade" value="{{animais.quantidade}}" required>
+        <label for="habitate">Habitate:</label>
+        <input type="text" id="habitate" name="habitate" value="{{animais.habitate}}" required>
+        <button type="submit">Salvar</button>
+    </form>
+</div>
